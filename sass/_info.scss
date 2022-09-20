@@ -1,0 +1,20 @@
+.info {
+    background-color: #FAFAFA;
+    @include font;
+    height: 25rem;
+}
+
+.info-titles {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 600;
+}
+
+.info-p {
+    display: flex;
+
+}
+.nav-info {
+    display: flex;
+    flex-direction: column;
+}

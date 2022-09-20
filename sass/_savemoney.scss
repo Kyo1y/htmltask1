@@ -1,0 +1,49 @@
+.savemoney {
+    background-color: #ED4C5C;
+}
+.save-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    @include font;
+    width: 67rem;
+    justify-content: center;
+    height: 30rem;
+    gap: 4rem;
+    color: white;
+}
+
+.sittingManImg {
+    display: flex;
+    justify-content: flex-end;
+}
+.man {
+    z-index: 2;
+   position: relative;
+
+}
+.before, .after {
+    position: absolute;
+    padding-top: 1.5rem;
+}
+.before {
+    right: 13.5rem;
+}
+.after {
+    right: 21rem;
+}
+.save-p {
+    width: 33rem;
+    line-height: 150%;
+    padding-bottom: 2rem;
+}
+.save-title {
+    font-size: 2.125rem;
+    font-weight: 600;
+    width: 25rem;
+    padding-bottom:2rem ;
+}
+.save-app-link {
+    display: flex;
+    gap: 2rem;
+}

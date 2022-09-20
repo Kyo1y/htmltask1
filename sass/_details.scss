@@ -1,0 +1,37 @@
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 40rem;
+    
+}
+.software-title-cont{
+    @include font;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.software-desc-cont {
+    @include font;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 140%;
+
+}
+.det-cont {
+    max-width: 25rem;
+}
+.software-link{
+    padding-top: 2rem;
+    @include font;
+}
+.software-link a{
+    text-decoration: none;
+    color: #ED4C5C;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.software-link a:hover {
+    text-decoration: underline;
+}

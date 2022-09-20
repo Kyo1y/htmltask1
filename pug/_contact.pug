@@ -1,0 +1,29 @@
+block contact
+    .contact-container 
+        .contact-text 
+            h1 contact 
+            p Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours
+        .contact-input 
+            input(type="text", class="firstname", placeholder="First Name")
+            input(type="text", class="last", placeholder="Last Name")
+            input(type="text", class="phone", placeholder="Phone Number")
+            .select-box
+                .options-container
+                    .option 
+                        input(type="radio" class="radio" id="auto" name="category")
+                        label(for="auto") 1
+                    .option 
+                        input(type="radio" class="radio" id="film" name="category")
+                        label(for="film") 2
+                    .option 
+                        input(type="radio" class="radio" id="science" name="category")
+                        label(for="science") 3
+                    .option 
+                        input(type="radio" class="radio" id="music" name="category")
+                        label(for="music") 4
+                    .option 
+                        input(type="radio" class="radio" id="art" name="category")
+                        label(for="art") 5
+            .service Select Service
+            .button-div 
+                button.submit submit now

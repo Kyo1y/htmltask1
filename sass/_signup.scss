@@ -1,0 +1,59 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 47rem;
+    
+}
+.main-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5rem;
+    justify-content: center;
+    color: white;
+    z-index: 5;
+    display: flex;
+    @include font;
+    padding-bottom: 2rem
+}
+.description {
+    @include font;
+    color: white;
+
+    position: relative;
+    width: 480px;
+    height: 124px;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: 600;
+}
+.desc-container {
+    display: flex;  
+    justify-content: center;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+.sign-up-btn {
+    border-radius: 8px;
+    border: 2px solid white;
+    background: white;
+    height: 3rem;
+    position: absolute;
+    margin-top: 1.5rem;
+    padding: 0 2rem 0 2rem;
+    color: #ED4C5C;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    @include font;
+}
+.sign-up-btn:hover {
+    transition:0.4s;
+        color: white;
+
+    background: transparent;
+    cursor: pointer;
+}

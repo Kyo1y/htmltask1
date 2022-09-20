@@ -1,0 +1,17 @@
+body {
+    margin: 0%;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin font {
+    font-family: 'Raleway', sans-serif;
+};
+@mixin link-hover{
+    text-decoration: underline;
+}
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="reset.css")
+    body 
+        header.header
+            .container 
+                .nav-container
+                    block nav
+                    include _nav
+        .signup-container 
+            block signup 
+            include _signupBody
+        .details-container 
+            block details 
+            include _details
+        .features-container
+            block features 
+            include _features
+        .technology-container 
+            block technology 
+            include _technology
+        .savemoney 
+            block savemoney 
+            include _savemoney
+        .contact
+            block contact 
+            include _contact
+        .info 
+            block info
+            include _info
+
+    script(src="js/jquery.min.js")
+    script(src="js/navbar.js")
+    script(src="js/select.js")

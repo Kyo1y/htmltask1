@@ -1,0 +1,101 @@
+.container {
+   background: 
+   linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
+   url(../img/bg.svg) center center / cover;
+   height: 50rem;
+   
+}
+.header {
+    position: absolute;
+    width: 100%;
+}
+.nav-logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 11.5rem;
+    font-weight: 700;
+    @include font;
+}
+
+li {
+    display: inline-block;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 14px;
+    @include font;
+    font-weight: 500;
+}
+.nav-item a:hover {
+    transition: 0.1s;
+    font-weight: 700;
+}
+.nav-list {
+    list-style-type: none;
+}
+
+.name {
+    width: 32%;
+    @include font;
+}
+
+.name::before {
+    content: url(../img/logo.svg);
+    position: absolute;
+    margin-left: 9.5rem;
+}
+
+.usflag {
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: 4rem;
+}
+
+.lang {
+    margin-left: 5.4rem;
+    @include font;
+}
+.lang1::after {
+    content: url(../img/arrow-down.svg);
+    margin-left: 0.7rem;
+}
+
+.nav-button {
+    border-radius: 8px;
+    border: 2px solid white;
+    background: transparent;
+    height: 3rem;
+    position: absolute;
+    margin-top: 2rem;
+    padding: 0 2rem 0 2rem;
+}
+.nav-button a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    @include font;
+}
+.nav-button:hover {
+    background: linear-gradient(
+        rgba(25, 25, 25, 0.6), 
+        rgba(25, 25, 25, 0.6)
+      );
+    transition: 0.5s;
+    cursor: pointer;
+}
+.fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #ED4C5C;
+    height: 6.5rem;
+    transition: 0.5s;
+    z-index: 100;
+}
