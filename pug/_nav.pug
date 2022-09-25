@@ -14,7 +14,10 @@ block nav
             a(href="#")  sign up
         li.flag.nav-item 
             img(src="img/us.svg", alt="#" class="usflag")
-        li.lang.nav-item 
-            a(href="#", class="lang1") en
+        select.lang 
+            option(value="en", class="option") en 
+            option(value="ru", class="option") ru 
+            option(value="kg", class="option") kg 
+        img(src="img/arrow-down.svg", alt="", class="arrow-d")
         button.login.nav-button 
             a(href="#", class="login") login

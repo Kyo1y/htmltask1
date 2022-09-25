@@ -1,7 +1,7 @@
 .info {
     background-color: #FAFAFA;
     @include font;
-    height: 25rem;
+    height: 30rem;
 }
 
 .info-titles {
@@ -9,12 +9,68 @@
     justify-content: space-evenly;
     font-weight: 600;
 }
-
+.address{
+    width: 11rem;
+    line-height: 150%;
+}
+.address p {
+    font-weight: 600;
+    font-size: 0.75rem;
+}
 .info-p {
     display: flex;
-
+    justify-content: space-evenly;
+    padding-top: 7rem;
+    line-height: 150%;
 }
 .nav-info {
     display: flex;
     flex-direction: column;
+    line-height: 150%;
+}
+
+.getintouch {
+    line-height: 150%;
+}
+.info-p h2 {
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    width: 32rem;
+    font-size: 0.75rem;
+    align-items: flex-end;
+    height: 7rem;
+}
+
+.nav-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.nav-info a:hover {
+    text-decoration: underline;
+}
+.getintouch a {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.getintouch a:hover {
+    text-decoration: underline;
+}
+.getintouch p {
+    font-size: 0.75rem;
+    font-weight: 600;
+
+}
+.socialimg{
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.5rem;
 }

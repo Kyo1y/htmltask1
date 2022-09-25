@@ -1,33 +1,31 @@
 block info 
-    .info-titles 
-        h2 Address 
-        h2 Services 
-        h2 Get in Touch 
-        h2 We Support 
-    .info-p 
+    .info-p
         .address
+            h2.address-info Address 
             p Pipang Ltd, Griva Digeni,
                 | 81-83 Jacovides Tower, 1st Floor
                 | 1090 Picosia USA
         .nav-info 
-                ul 
-                    li 
-                        a Overview 
-                    li 
-                        a Features 
-                    li 
-                        a Technology 
-                    li 
-                        a Terms & Conditions
-                    li 
-                        a Privacy
+                    h2.services-info Services 
+                    a(href='#', class="overview", class="nav-item") Overview 
+                    a(href='#', class="features", class="nav-item") Features 
+                    a(href='#', class="tech", class="nav-item") Technology 
+                    a(href='#') Terms & Conditions
+                    a(href='#') Privacy
         .getintouch 
+                h2.git-info Get in Touch 
                 a(href='#') info@cloudbudget.com
                 p +1 844-721-7120
-                img(src="img/facebook.svg", alt="")
-                img(src="img/linkedin.svg", alt="")
-                img(src="img/twitter.svg", alt="")
+                .socialimg
+                    a(href="#") 
+                        img(src="img/facebook.svg", alt="")
+                    a(href="#") 
+                        img(src="img/linkedin.svg", alt="")
+                    a(href="#") 
+                        img(src="img/twitter.svg", alt="")
         .visa 
-                img(src="img/visa.svg", alt="")
+                h2.support-info We Support 
+                a(href="#") 
+                    img(src="img/visa.svg", alt="")
     .copyright 
             p Copyright 2018 CloudBudget

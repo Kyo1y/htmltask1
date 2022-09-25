@@ -11,14 +11,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
-  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(../img/bg.svg) center center/cover;
-  height: 50rem;
-}
-
 .header {
-  position: absolute;
+  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(../img/bg.svg) no-repeat;
+  height: 50rem;
   width: 100%;
+  position: absolute;
+  background-size: 100%;
 }
 
 .nav-logo a {
@@ -44,7 +42,6 @@ li {
   margin-right: 1rem;
   font-size: 14px;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
 }
 
 .nav-item a:hover {
@@ -70,17 +67,34 @@ li {
 .usflag {
   position: absolute;
   margin-top: -1.5rem;
-  margin-left: 4rem;
+  margin-left: 5rem;
 }
 
 .lang {
-  margin-left: 5.4rem;
+  margin-left: 7.4rem;
   font-family: "Raleway", sans-serif;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  color: white;
 }
 
-.lang1::after {
+.lang::after {
   content: url(../img/arrow-down.svg);
   margin-left: 0.7rem;
+}
+
+.arrow-d {
+  margin-top: 2.8rem;
+  margin-left: 0.2rem;
+  position: absolute;
+  transition: 0.4s;
+}
+
+.arrow-d.active {
+  transform: rotateX(180deg);
+  transition: 0.4s;
 }
 
 .nav-button {
@@ -91,6 +105,7 @@ li {
   position: absolute;
   margin-top: 2rem;
   padding: 0 2rem 0 2rem;
+  margin-left: 3rem;
 }
 
 .nav-button a {
@@ -114,6 +129,26 @@ li {
   height: 6.5rem;
   transition: 0.5s;
   z-index: 100;
+}
+
+.overview.active {
+  font-weight: 600;
+}
+
+.features.active {
+  font-weight: 600;
+}
+
+.tech.active {
+  font-weight: 600;
+}
+
+.contact.active {
+  font-weight: 600;
+}
+
+.lang.active {
+  background-color: rgba(9, 9, 9, 0.7);
 }
 
 .signup-container {
@@ -575,10 +610,20 @@ li {
   color: #ED4C5C;
 }
 
+.arrow {
+  margin-left: 13rem;
+  transition: 0.4s;
+}
+
+.arrow.active {
+  transform: rotateX(180deg);
+  transition: 0.4s;
+}
+
 .info {
   background-color: #FAFAFA;
   font-family: "Raleway", sans-serif;
-  height: 25rem;
+  height: 30rem;
 }
 
 .info-titles {
@@ -587,13 +632,116 @@ li {
   font-weight: 600;
 }
 
+.address {
+  width: 11rem;
+  line-height: 150%;
+}
+
+.address p {
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
 .info-p {
   display: flex;
+  justify-content: space-evenly;
+  padding-top: 7rem;
+  line-height: 150%;
 }
 
 .nav-info {
   display: flex;
   flex-direction: column;
+  line-height: 150%;
+}
+
+.getintouch {
+  line-height: 150%;
+}
+
+.info-p h2 {
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  width: 32rem;
+  font-size: 0.75rem;
+  align-items: flex-end;
+  height: 7rem;
+}
+
+.nav-info a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.nav-info a:hover {
+  text-decoration: underline;
+}
+
+.getintouch a {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+.getintouch a:hover {
+  text-decoration: underline;
+}
+
+.getintouch p {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.socialimg {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+@media screen and (min-width: 1920px) and (max-width: 1920px) {
+  .before {
+    right: 33.5rem;
+  }
+  .after {
+    right: 25rem;
+  }
+  ul {
+    margin-top: 0.5rem;
+  }
+  .flag {
+    margin-left: 7rem;
+  }
+  .nav-button {
+    margin-top: 1.8rem;
+  }
+  .overview {
+    margin-left: 4rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .name {
+    width: 30.3%;
+    margin-left: 14rem;
+  }
+  .flag {
+    margin-left: 18rem;
+  }
+  .before {
+    right: auto;
+    margin-left: 2.5rem;
+  }
+  .after {
+    right: auto;
+    margin-left: -7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
