@@ -78,6 +78,7 @@ li {
   text-transform: uppercase;
   -webkit-appearance: none;
   color: white;
+  cursor: pointer;
 }
 
 .lang::after {
