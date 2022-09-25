@@ -67,7 +67,7 @@ li {
     text-transform: uppercase;
     -webkit-appearance: none;
     color: white;
-
+    cursor: pointer;
 }
 .lang::after {
     content: url(../img/arrow-down.svg);
